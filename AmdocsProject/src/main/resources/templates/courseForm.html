@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+	<title>Data Renderer</title>
+</head>
+<body>
+<h1>Course Form</h1>
+<form th:action="@{/saveCourse}" th:object="${contact}" method="post">
+Course-ID: <input type="number" th:field="*{course_id}"/><br><br>
+Course-Name: <input type="text" th:field="*{c_name}"/><br><br>
+Course_Desp: <input type="text" th:field="*{c_desp}"/><br><br>
+Course-Fees: <input type="text" th:field="*{c_fees}"/><br><br>
+Course-Resource: <input type="text" th:field="*{c_resource}"/><br><br>
+<input type="submit" value="Save"/>
+</form>
+</body>
+</html>

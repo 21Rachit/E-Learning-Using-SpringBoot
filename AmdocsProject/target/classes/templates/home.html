@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+	<title>Data Renderer</title>
+</head>
+<body>
+<div th:text="${admin}"></div><br>
+<a th:href="@{/adminLoginForm}">Click here to login as ADMIN</a><br><br><br>
+<div th:text="${user}"></div><br>
+<a th:href="@{/userLoginForm}">Click here to login as USER</a><br><br><br>
+</body>
+</html>

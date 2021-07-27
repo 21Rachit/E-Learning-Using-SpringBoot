@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+	<title>Data Renderer</title>
+</head>
+<body>
+<h1>Feedback Form</h1>
+<form th:action="@{/saveFeedback}" th:object="${contact}" method="post">
+UserID: <input type="number" th:field="*{user_id}"/><br><br>
+Name: <input type="text" th:field="*{name}"/><br><br>
+Email: <input type="text" th:field="*{email}"/><br><br>
+Feedback: <input type="text" th:field="*{feedbackmessage}"/><br><br>
+<input type="submit" value="Save"/>
+</form>
+</body>
+</html>

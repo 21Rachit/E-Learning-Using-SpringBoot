@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+	<title>Data Renderer</title>
+</head>
+<body>
+<h1>User Course Enrollment Form</h1>
+<form th:action="@{/saveUserCourseMapping}" th:object="${contact}" method="post">
+Name: <input type="text" th:field="*{name}"/><br><br>
+Course-ID: <input type="number" th:field="*{course_id}"/><br><br>
+Course-Name: <input type="text" th:field="*{course_name}"/><br><br>
+<input type="submit" value="Save"/>
+</form>
+</body>
+</html>
